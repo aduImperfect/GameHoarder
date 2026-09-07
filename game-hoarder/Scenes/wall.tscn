@@ -1,0 +1,19 @@
+[gd_scene format=3 uid="uid://cw2v03cixxw6n"]
+
+[ext_resource type="Texture2D" uid="uid://csosd6v52dsth" path="res://Textures/Wall.png" id="1_d155t"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_d155t"]
+
+[node name="Wall" type="Node2D" unique_id=1157383819]
+
+[node name="WallRB2D" type="RigidBody2D" parent="." unique_id=1396662049]
+collision_layer = 2
+gravity_scale = 0.0
+freeze = true
+
+[node name="WallCS2D" type="CollisionShape2D" parent="WallRB2D" unique_id=2135010380]
+shape = SubResource("RectangleShape2D_d155t")
+
+[node name="Wall" type="Sprite2D" parent="WallRB2D" unique_id=1932681993]
+scale = Vector2(20, 20)
+texture = ExtResource("1_d155t")
