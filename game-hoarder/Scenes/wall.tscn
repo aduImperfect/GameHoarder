@@ -1,6 +1,7 @@
 [gd_scene format=3 uid="uid://cw2v03cixxw6n"]
 
 [ext_resource type="Texture2D" uid="uid://csosd6v52dsth" path="res://Textures/Wall.png" id="1_d155t"]
+[ext_resource type="Script" uid="uid://ci8aj4epi3kp0" path="res://Scripts/wall.gd" id="1_yjehn"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_d155t"]
 
@@ -10,6 +11,7 @@
 collision_layer = 2
 gravity_scale = 0.0
 freeze = true
+script = ExtResource("1_yjehn")
 
 [node name="WallCS2D" type="CollisionShape2D" parent="WallRB2D" unique_id=2135010380]
 shape = SubResource("RectangleShape2D_d155t")
