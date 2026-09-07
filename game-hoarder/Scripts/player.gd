@@ -4,6 +4,7 @@ class_name PlayerCharacter
 
 @export var move_speed : float
 @export var is_moving : bool = false
+@export var collectedgames : Array[Texture2D]
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:

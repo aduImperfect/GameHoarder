@@ -1,0 +1,19 @@
+[gd_scene format=3 uid="uid://br8g18gjsxphb"]
+
+[ext_resource type="Texture2D" uid="uid://ds14mm3uybddm" path="res://Textures/Game1.png" id="1_ebmjs"]
+[ext_resource type="Script" uid="uid://bs3kk4dusrrg3" path="res://Scripts/game.gd" id="1_qxrlw"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_m6x6n"]
+
+[node name="Game" type="Node2D" unique_id=1587542141]
+script = ExtResource("1_qxrlw")
+tex = ExtResource("1_ebmjs")
+
+[node name="GameA2D" type="Area2D" parent="." unique_id=1837844924]
+collision_layer = 4
+
+[node name="GameCS2D" type="CollisionShape2D" parent="GameA2D" unique_id=1968536490]
+shape = SubResource("RectangleShape2D_m6x6n")
+
+[node name="Game" type="Sprite2D" parent="GameA2D" unique_id=1297007933]
+scale = Vector2(20, 20)

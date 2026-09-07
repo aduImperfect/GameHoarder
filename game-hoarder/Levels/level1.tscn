@@ -2,6 +2,9 @@
 
 [ext_resource type="PackedScene" uid="uid://c77i1yy2c4kdj" path="res://Scenes/player.tscn" id="1_i4kf4"]
 [ext_resource type="PackedScene" uid="uid://cw2v03cixxw6n" path="res://Scenes/wall.tscn" id="1_t21ke"]
+[ext_resource type="PackedScene" uid="uid://br8g18gjsxphb" path="res://Scenes/game.tscn" id="3_njhy2"]
+[ext_resource type="Texture2D" uid="uid://blfips6b0esay" path="res://Textures/Game2.png" id="4_m6f6w"]
+[ext_resource type="Texture2D" uid="uid://dpndmb4lwf5j7" path="res://Textures/Game3.png" id="5_m6f6w"]
 
 [node name="Level1" type="Node2D" unique_id=375870338]
 
@@ -23,3 +26,34 @@ scale = Vector2(2, 45)
 [node name="Wall4" parent="." unique_id=967409322 instance=ExtResource("1_t21ke")]
 position = Vector2(1280, 360)
 scale = Vector2(2, 45)
+
+[node name="Room1Wall1" parent="." unique_id=1778103436 instance=ExtResource("1_t21ke")]
+position = Vector2(640, 113)
+scale = Vector2(10, 1)
+
+[node name="Room1Wall2" parent="." unique_id=1990987105 instance=ExtResource("1_t21ke")]
+position = Vector2(731, 203.00002)
+scale = Vector2(1, 10)
+
+[node name="Room1Wall3" parent="." unique_id=1729010553 instance=ExtResource("1_t21ke")]
+position = Vector2(550, 203.00002)
+scale = Vector2(1, 10)
+
+[node name="Room1Wall4" parent="." unique_id=808836464 instance=ExtResource("1_t21ke")]
+position = Vector2(580, 293)
+scale = Vector2(4, 1)
+
+[node name="Room1Wall5" parent="." unique_id=611981932 instance=ExtResource("1_t21ke")]
+position = Vector2(701, 293)
+scale = Vector2(4, 1)
+
+[node name="Game1" parent="." unique_id=1587542141 instance=ExtResource("3_njhy2")]
+position = Vector2(589, 200)
+
+[node name="Game2" parent="." unique_id=1365070008 instance=ExtResource("3_njhy2")]
+position = Vector2(618, 200)
+tex = ExtResource("4_m6f6w")
+
+[node name="Game3" parent="." unique_id=916384252 instance=ExtResource("3_njhy2")]
+position = Vector2(646, 200)
+tex = ExtResource("5_m6f6w")
