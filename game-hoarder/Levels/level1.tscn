@@ -6,6 +6,13 @@
 [ext_resource type="Texture2D" uid="uid://blfips6b0esay" path="res://Textures/Game2.png" id="4_m6f6w"]
 [ext_resource type="Texture2D" uid="uid://dpndmb4lwf5j7" path="res://Textures/Game3.png" id="5_m6f6w"]
 [ext_resource type="PackedScene" uid="uid://di36ls0dw1anm" path="res://Scenes/player_1.tscn" id="6_302sc"]
+[ext_resource type="Texture2D" uid="uid://reb3caix08wm" path="res://Textures/Game4.png" id="7_aunfx"]
+[ext_resource type="Texture2D" uid="uid://cy0wvseudi30f" path="res://Textures/Game5.png" id="8_j32wv"]
+[ext_resource type="Texture2D" uid="uid://bkbg6ioy107v1" path="res://Textures/Game6.png" id="9_1jijn"]
+[ext_resource type="Texture2D" uid="uid://gsu11yscxngk" path="res://Textures/Game7.png" id="10_20gr8"]
+[ext_resource type="Texture2D" uid="uid://4qmj15queh7y" path="res://Textures/Game8.png" id="11_ts5l0"]
+[ext_resource type="Texture2D" uid="uid://bubd456m3cwhq" path="res://Textures/Game9.png" id="12_u2cfn"]
+[ext_resource type="Texture2D" uid="uid://dx0fbvtisanvl" path="res://Textures/Game10.png" id="13_lr1ra"]
 
 [node name="Level1" type="Node2D" unique_id=375870338]
 
@@ -88,7 +95,7 @@ owned_by = null
 
 [node name="Room1Game4" parent="Room1" unique_id=1192033976 instance=ExtResource("3_njhy2")]
 position = Vector2(60, -40)
-tex = ExtResource("5_m6f6w")
+tex = ExtResource("7_aunfx")
 is_collected = null
 is_displayed = null
 game_value = 4357.0
@@ -133,33 +140,150 @@ position = Vector2(-80, -107.00003)
 scale = Vector2(1, 3)
 
 [node name="Room2Game1" parent="Room2" unique_id=1848901543 instance=ExtResource("3_njhy2")]
-position = Vector2(-15, -45)
+position = Vector2(-5, -45)
 is_collected = null
 is_displayed = null
-game_value = 125.0
-game_type = null
-game_weight = 1
-game_size = null
+game_value = 345.0
 owned_by = null
 
 [node name="Room2Game2" parent="Room2" unique_id=1526721796 instance=ExtResource("3_njhy2")]
-position = Vector2(25, -45)
+position = Vector2(35, -45)
 tex = ExtResource("4_m6f6w")
 is_collected = null
 is_displayed = null
-game_value = 377.75
-game_type = 2
-game_weight = 5
-game_size = null
+game_value = 1034.75
+game_type = 3
+game_weight = 2
+game_size = 3
 owned_by = null
 
 [node name="Room2Game3" parent="Room2" unique_id=616287744 instance=ExtResource("3_njhy2")]
-position = Vector2(65, -45)
+position = Vector2(75, -45)
 tex = ExtResource("5_m6f6w")
 is_collected = null
 is_displayed = null
-game_value = 1040.99
-game_type = 1
-game_weight = 4
-game_size = null
+game_value = 2345.0
+game_type = 2
+game_weight = 3
+game_size = 1
+owned_by = null
+
+[node name="Room2Game4" parent="Room2" unique_id=1768810897 instance=ExtResource("3_njhy2")]
+position = Vector2(115, -45)
+tex = ExtResource("7_aunfx")
+is_collected = null
+is_displayed = null
+game_value = 5432.0
+game_type = 2
+game_weight = 5
+game_size = 3
+owned_by = null
+
+[node name="Room2Game5" parent="Room2" unique_id=1481506271 instance=ExtResource("3_njhy2")]
+position = Vector2(155, -45)
+tex = ExtResource("8_j32wv")
+is_collected = null
+is_displayed = null
+game_value = 654.32
+game_type = 3
+owned_by = null
+
+[node name="Room2Game6" parent="Room2" unique_id=322618107 instance=ExtResource("3_njhy2")]
+position = Vector2(-5, 45)
+tex = ExtResource("9_1jijn")
+is_collected = null
+is_displayed = null
+game_value = 345.0
+owned_by = null
+
+[node name="Room2Game7" parent="Room2" unique_id=2137163638 instance=ExtResource("3_njhy2")]
+position = Vector2(35, 45)
+tex = ExtResource("10_20gr8")
+is_collected = null
+is_displayed = null
+game_value = 1034.75
+game_type = 3
+game_weight = 2
+game_size = 3
+owned_by = null
+
+[node name="Room2Game8" parent="Room2" unique_id=480442941 instance=ExtResource("3_njhy2")]
+position = Vector2(75, 45)
+tex = ExtResource("11_ts5l0")
+is_collected = null
+is_displayed = null
+game_value = 2345.0
+game_type = 2
+game_weight = 3
+game_size = 1
+owned_by = null
+
+[node name="Room2Game9" parent="Room2" unique_id=602929942 instance=ExtResource("3_njhy2")]
+position = Vector2(115, 45)
+tex = ExtResource("12_u2cfn")
+is_collected = null
+is_displayed = null
+game_value = 5432.0
+game_type = 2
+game_weight = 5
+game_size = 3
+owned_by = null
+
+[node name="Room2Game10" parent="Room2" unique_id=2022773632 instance=ExtResource("3_njhy2")]
+position = Vector2(155, 45)
+tex = ExtResource("13_lr1ra")
+is_collected = null
+is_displayed = null
+game_value = 654.32
+game_type = 3
+owned_by = null
+
+[node name="Room2Game11" parent="Room2" unique_id=1420310369 instance=ExtResource("3_njhy2")]
+position = Vector2(-5, 135)
+tex = ExtResource("9_1jijn")
+is_collected = null
+is_displayed = null
+game_value = 345.0
+owned_by = null
+
+[node name="Room2Game12" parent="Room2" unique_id=98675915 instance=ExtResource("3_njhy2")]
+position = Vector2(35, 135)
+tex = ExtResource("10_20gr8")
+is_collected = null
+is_displayed = null
+game_value = 1034.75
+game_type = 3
+game_weight = 2
+game_size = 3
+owned_by = null
+
+[node name="Room2Game13" parent="Room2" unique_id=424929000 instance=ExtResource("3_njhy2")]
+position = Vector2(75, 135)
+tex = ExtResource("11_ts5l0")
+is_collected = null
+is_displayed = null
+game_value = 2345.0
+game_type = 2
+game_weight = 3
+game_size = 1
+owned_by = null
+
+[node name="Room2Game14" parent="Room2" unique_id=567226881 instance=ExtResource("3_njhy2")]
+position = Vector2(115, 135)
+tex = ExtResource("12_u2cfn")
+is_collected = null
+is_displayed = null
+game_value = 5432.0
+game_type = 2
+game_weight = 5
+game_size = 3
+owned_by = null
+
+[node name="Room2Game15" parent="Room2" unique_id=2057183871 instance=ExtResource("3_njhy2")]
+position = Vector2(155, 135)
+tex = ExtResource("13_lr1ra")
+is_collected = null
+is_displayed = null
+game_value = 654.32
+game_type = 3
 owned_by = null
