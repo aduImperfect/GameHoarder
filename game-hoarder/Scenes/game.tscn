@@ -9,11 +9,13 @@
 script = ExtResource("1_qxrlw")
 tex = ExtResource("1_ebmjs")
 
-[node name="GameA2D" type="Area2D" parent="." unique_id=1837844924]
+[node name="GameRB2D" type="RigidBody2D" parent="." unique_id=134928134]
 collision_layer = 4
+gravity_scale = 0.0
+freeze = true
 
-[node name="GameCS2D" type="CollisionShape2D" parent="GameA2D" unique_id=1968536490]
+[node name="GameCS2D" type="CollisionShape2D" parent="GameRB2D" unique_id=1968536490]
 shape = SubResource("RectangleShape2D_m6x6n")
 
-[node name="Game" type="Sprite2D" parent="GameA2D" unique_id=1297007933]
+[node name="Game" type="Sprite2D" parent="GameRB2D" unique_id=1297007933]
 scale = Vector2(20, 20)
