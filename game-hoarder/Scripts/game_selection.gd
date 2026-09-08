@@ -19,6 +19,7 @@ func _process(_delta: float) -> void:
 		if PlayerCharacter.try_collecting:
 			set_deferred("monitoring", false)
 			owner.is_collected = true
+			PlayerCharacter.collectedgames.append(owner)
 			PlayerCharacter.try_collecting = false
 
 	else:

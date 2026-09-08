@@ -5,12 +5,13 @@ class_name PlayerCharacter
 @export var move_speed : float
 @export var is_moving : bool = false
 static var try_collecting : bool = false
-@export var collectedgames : Array[Texture2D]
+static var collectedgames : Array[Node2D]
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
 	is_moving = false
 	try_collecting = false
+	collectedgames.clear()
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(_delta: float) -> void:

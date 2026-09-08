@@ -1,3 +1,28 @@
 [gd_scene format=3 uid="uid://mhoacouuuw5n"]
 
+[ext_resource type="Script" uid="uid://fosoyonr7qbr" path="res://Scripts/progress_bar.gd" id="1_bwfah"]
+[ext_resource type="Script" uid="uid://wtorbmsjvyya" path="res://Scripts/currency_bar.gd" id="2_6mhmv"]
+
 [node name="Mainui" type="Node2D" unique_id=1683634489]
+
+[node name="TimeProgressBar" type="ProgressBar" parent="." unique_id=700373057]
+custom_minimum_size = Vector2(1200, 30)
+offset_left = 40.0
+offset_top = 10.0
+offset_right = 1240.0
+offset_bottom = 40.0
+value = 100.0
+script = ExtResource("1_bwfah")
+timeCounterMax = 1.0
+timeSpeed = 1.0
+
+[node name="CurrencyProgressBar" type="ProgressBar" parent="." unique_id=1365594350]
+custom_minimum_size = Vector2(30, 640)
+offset_left = 10.0
+offset_top = 40.0
+offset_right = 40.0
+offset_bottom = 680.0
+max_value = 10000.0
+value = 10000.0
+fill_mode = 2
+script = ExtResource("2_6mhmv")

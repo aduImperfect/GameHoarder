@@ -3,6 +3,7 @@ extends Node2D
 @export var tex : Texture2D
 @export var is_collected : bool
 @export var is_displayed : bool
+@export var game_value : float
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
