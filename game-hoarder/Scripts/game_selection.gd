@@ -16,11 +16,18 @@ func _ready() -> void:
 func _process(_delta: float) -> void:
 	if playerInRegion:
 		gameTex.modulate = currColour
-		if PlayerCharacter.try_collecting:
+		if PlayerCharacter_0.try_collecting_0:
 			set_deferred("monitoring", false)
 			owner.is_collected = true
-			PlayerCharacter.collectedgames.append(owner)
-			PlayerCharacter.try_collecting = false
+			owner.owned_by = 0
+			PlayerCharacter_0.collectedgames_0.append(owner)
+			PlayerCharacter_0.try_collecting_0 = false
+		if PlayerCharacter_1.try_collecting_1:
+			set_deferred("monitoring", false)
+			owner.is_collected = true
+			owner.owned_by = 1
+			PlayerCharacter_1.collectedgames_1.append(owner)
+			PlayerCharacter_1.try_collecting_1 = false
 
 	else:
 		gameTex.modulate = origColour
@@ -28,9 +35,8 @@ func _process(_delta: float) -> void:
 func _on_body_entered(_body: Node2D) -> void:
 	if !_body.name.contains("Player"):
 		return
-
+	
 	playerInRegion = true
-
 
 func _on_body_exited(_body: Node2D) -> void:
 	if !_body.name.contains("Player"):

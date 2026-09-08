@@ -1,7 +1,8 @@
 [gd_scene format=3 uid="uid://mhoacouuuw5n"]
 
 [ext_resource type="Script" uid="uid://fosoyonr7qbr" path="res://Scripts/progress_bar.gd" id="1_bwfah"]
-[ext_resource type="Script" uid="uid://wtorbmsjvyya" path="res://Scripts/currency_bar.gd" id="2_6mhmv"]
+[ext_resource type="Script" uid="uid://wtorbmsjvyya" path="res://Scripts/currency_bar_0.gd" id="2_6mhmv"]
+[ext_resource type="Script" uid="uid://u01ngymym3uc" path="res://Scripts/currency_bar_1.gd" id="3_nia38"]
 
 [node name="Mainui" type="Node2D" unique_id=1683634489]
 
@@ -16,7 +17,7 @@ script = ExtResource("1_bwfah")
 timeCounterMax = 1.0
 timeSpeed = 1.0
 
-[node name="CurrencyProgressBar" type="ProgressBar" parent="." unique_id=1365594350]
+[node name="CurrencyProgressBar_0" type="ProgressBar" parent="." unique_id=1365594350]
 custom_minimum_size = Vector2(30, 640)
 offset_left = 10.0
 offset_top = 40.0
@@ -26,3 +27,14 @@ max_value = 10000.0
 value = 10000.0
 fill_mode = 2
 script = ExtResource("2_6mhmv")
+
+[node name="CurrencyProgressBar_1" type="ProgressBar" parent="." unique_id=992825294]
+custom_minimum_size = Vector2(30, 640)
+offset_left = 1240.0
+offset_top = 40.0
+offset_right = 1270.0
+offset_bottom = 680.0
+max_value = 10000.0
+value = 10000.0
+fill_mode = 2
+script = ExtResource("3_nia38")
