@@ -22,10 +22,12 @@ func _process(_delta: float) -> void:
 	if is_collected:
 		global_position = Vector2(-9999.0, -9999.0)
 		visible = false
+		get_child(0).get_child(0).set_deferred("disabled", true)
 
 	if is_displayed:
+		#set_deferred("monitoring", true)
 		if owned_by == 0:
-			global_position = PlayerCharacter_0.owner.global_position + Vector2(0.0, -50.0)
-		elif owned_by == 1:
-			global_position = PlayerCharacter_1.owner.global_position + Vector2(0.0, -50.0)
+			global_position = Vector2(670.0, 565.0)
+		if owned_by == 1:
+			global_position = Vector2(600.0, 565.0)
 		visible = true

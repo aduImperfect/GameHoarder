@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://mhoacouuuw5n"]
 
-[ext_resource type="Script" uid="uid://fosoyonr7qbr" path="res://Scripts/progress_bar.gd" id="1_bwfah"]
+[ext_resource type="Script" uid="uid://fosoyonr7qbr" path="res://Scripts/time_progress_bar.gd" id="1_bwfah"]
 [ext_resource type="Script" uid="uid://wtorbmsjvyya" path="res://Scripts/currency_bar_0.gd" id="2_6mhmv"]
 [ext_resource type="Script" uid="uid://u01ngymym3uc" path="res://Scripts/currency_bar_1.gd" id="3_nia38"]
 
@@ -15,7 +15,7 @@ offset_bottom = 40.0
 value = 100.0
 script = ExtResource("1_bwfah")
 timeCounterMax = 1.0
-timeSpeed = 1.0
+timeSpeed = 10.0
 
 [node name="CurrencyProgressBar_0" type="ProgressBar" parent="." unique_id=1365594350]
 custom_minimum_size = Vector2(30, 640)
