@@ -16,6 +16,11 @@ func _ready() -> void:
 func _process(_delta: float) -> void:
 	if playerInRegion:
 		gameTex.modulate = currColour
+		if PlayerCharacter.try_collecting:
+			set_deferred("monitoring", false)
+			owner.is_collected = true
+			PlayerCharacter.try_collecting = false
+
 	else:
 		gameTex.modulate = origColour
 
