@@ -7,6 +7,7 @@ class_name PlayerCharacter
 static var try_collecting : bool = false
 static var collectedgames : Array[Node2D]
 
+
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
 	is_moving = false

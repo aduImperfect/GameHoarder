@@ -27,36 +27,100 @@ scale = Vector2(5, 45)
 position = Vector2(1280, 360)
 scale = Vector2(5, 45)
 
-[node name="Room1Wall1" parent="." unique_id=1778103436 instance=ExtResource("1_t21ke")]
-position = Vector2(640, 113)
+[node name="Room1" type="Node2D" parent="." unique_id=848667097]
+position = Vector2(650, 200)
+
+[node name="Room1Wall1" parent="Room1" unique_id=1778103436 instance=ExtResource("1_t21ke")]
+position = Vector2(10, -87)
 scale = Vector2(10, 1)
 
-[node name="Room1Wall2" parent="." unique_id=1990987105 instance=ExtResource("1_t21ke")]
-position = Vector2(731, 203.00002)
+[node name="Room1Wall2" parent="Room1" unique_id=1990987105 instance=ExtResource("1_t21ke")]
+position = Vector2(-100, 3)
 scale = Vector2(1, 10)
 
-[node name="Room1Wall3" parent="." unique_id=1729010553 instance=ExtResource("1_t21ke")]
-position = Vector2(550, 203.00002)
+[node name="Room1Wall3" parent="Room1" unique_id=1729010553 instance=ExtResource("1_t21ke")]
+position = Vector2(100, 3)
 scale = Vector2(1, 10)
 
-[node name="Room1Wall4" parent="." unique_id=808836464 instance=ExtResource("1_t21ke")]
-position = Vector2(580, 293)
+[node name="Room1Wall4" parent="Room1" unique_id=808836464 instance=ExtResource("1_t21ke")]
+position = Vector2(-70, 93)
 scale = Vector2(4, 1)
 
-[node name="Room1Wall5" parent="." unique_id=611981932 instance=ExtResource("1_t21ke")]
-position = Vector2(701, 293)
+[node name="Room1Wall5" parent="Room1" unique_id=611981932 instance=ExtResource("1_t21ke")]
+position = Vector2(70, 93)
 scale = Vector2(4, 1)
 
-[node name="Game1" parent="." unique_id=1587542141 instance=ExtResource("3_njhy2")]
-position = Vector2(590, 201)
+[node name="Room1Game1" parent="Room1" unique_id=1587542141 instance=ExtResource("3_njhy2")]
+position = Vector2(-70, 0)
 game_value = 125.0
+game_weight = 1
+game_size = 1
 
-[node name="Game2" parent="." unique_id=1365070008 instance=ExtResource("3_njhy2")]
-position = Vector2(620, 200)
+[node name="Room1Game2" parent="Room1" unique_id=1365070008 instance=ExtResource("3_njhy2")]
+position = Vector2(-30, 0)
 tex = ExtResource("4_m6f6w")
 game_value = 377.75
+game_type = 2
+game_weight = 5
+game_size = 3
 
-[node name="Game3" parent="." unique_id=916384252 instance=ExtResource("3_njhy2")]
-position = Vector2(650, 200)
+[node name="Room1Game3" parent="Room1" unique_id=916384252 instance=ExtResource("3_njhy2")]
+position = Vector2(10, 0)
 tex = ExtResource("5_m6f6w")
 game_value = 1040.99
+game_type = 1
+game_weight = 4
+game_size = 2
+
+[node name="Room2" type="Node2D" parent="." unique_id=133449234]
+position = Vector2(1000, 400)
+
+[node name="Room2Wall1" parent="Room2" unique_id=1484950119 instance=ExtResource("1_t21ke")]
+position = Vector2(10, -87)
+scale = Vector2(20, 1)
+
+[node name="Room2Wall2" parent="Room2" unique_id=713653898 instance=ExtResource("1_t21ke")]
+position = Vector2(-50, 53)
+scale = Vector2(1, 15)
+
+[node name="Room2Wall3" parent="Room2" unique_id=640304931 instance=ExtResource("1_t21ke")]
+position = Vector2(200, 3)
+scale = Vector2(1, 20)
+
+[node name="Room2Wall4" parent="Room2" unique_id=811621582 instance=ExtResource("1_t21ke")]
+position = Vector2(-170, 193)
+scale = Vector2(2, 1)
+
+[node name="Room2Wall5" parent="Room2" unique_id=1744817811 instance=ExtResource("1_t21ke")]
+position = Vector2(110, 193)
+scale = Vector2(10, 1)
+
+[node name="Room2Wall6" parent="Room2" unique_id=834024231 instance=ExtResource("1_t21ke")]
+position = Vector2(-180, 53)
+scale = Vector2(1, 15)
+
+[node name="Room2Wall7" parent="Room2" unique_id=1822952109 instance=ExtResource("1_t21ke")]
+position = Vector2(59.99994, -187)
+scale = Vector2(15, 1)
+
+[node name="Room2Wall8" parent="Room2" unique_id=1302896966 instance=ExtResource("1_t21ke")]
+position = Vector2(-80, -107.00003)
+scale = Vector2(1, 3)
+
+[node name="Room2Game1" parent="Room2" unique_id=1848901543 instance=ExtResource("3_njhy2")]
+game_value = 125.0
+game_weight = 1
+
+[node name="Room2Game2" parent="Room2" unique_id=1526721796 instance=ExtResource("3_njhy2")]
+position = Vector2(40, 0)
+tex = ExtResource("4_m6f6w")
+game_value = 377.75
+game_type = 2
+game_weight = 5
+
+[node name="Room2Game3" parent="Room2" unique_id=616287744 instance=ExtResource("3_njhy2")]
+position = Vector2(80, 0)
+tex = ExtResource("5_m6f6w")
+game_value = 1040.99
+game_type = 1
+game_weight = 4
