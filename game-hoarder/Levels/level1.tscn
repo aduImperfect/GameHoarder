@@ -287,3 +287,103 @@ is_displayed = null
 game_value = 654.32
 game_type = 3
 owned_by = null
+
+[node name="Room2Game16" parent="Room2" unique_id=368465769 instance=ExtResource("3_njhy2")]
+position = Vector2(-135, -45)
+tex = ExtResource("9_1jijn")
+is_collected = null
+is_displayed = null
+game_value = 345.0
+owned_by = null
+
+[node name="Room2Game17" parent="Room2" unique_id=749668040 instance=ExtResource("3_njhy2")]
+position = Vector2(-95, -45)
+tex = ExtResource("10_20gr8")
+is_collected = null
+is_displayed = null
+game_value = 1034.75
+game_type = 3
+game_weight = 2
+game_size = 3
+owned_by = null
+
+[node name="Room2Game18" parent="Room2" unique_id=1332289770 instance=ExtResource("3_njhy2")]
+position = Vector2(-135, 45)
+tex = ExtResource("11_ts5l0")
+is_collected = null
+is_displayed = null
+game_value = 2345.0
+game_type = 2
+game_weight = 3
+game_size = 1
+owned_by = null
+
+[node name="Room2Game19" parent="Room2" unique_id=293541413 instance=ExtResource("3_njhy2")]
+position = Vector2(-95, 45)
+tex = ExtResource("12_u2cfn")
+is_collected = null
+is_displayed = null
+game_value = 5432.0
+game_type = 2
+game_weight = 5
+game_size = 3
+owned_by = null
+
+[node name="Room2Game20" parent="Room2" unique_id=1772425794 instance=ExtResource("3_njhy2")]
+position = Vector2(-135, 135)
+tex = ExtResource("13_lr1ra")
+is_collected = null
+is_displayed = null
+game_value = 654.32
+game_type = 3
+owned_by = null
+
+[node name="Room2Game21" parent="Room2" unique_id=1045785066 instance=ExtResource("3_njhy2")]
+position = Vector2(115, -135)
+tex = ExtResource("7_aunfx")
+is_collected = null
+is_displayed = null
+game_value = 5432.0
+game_type = 2
+game_weight = 5
+game_size = 3
+owned_by = null
+
+[node name="Room2Game22" parent="Room2" unique_id=269191678 instance=ExtResource("3_njhy2")]
+position = Vector2(155, -135)
+tex = ExtResource("8_j32wv")
+is_collected = null
+is_displayed = null
+game_value = 654.32
+game_type = 3
+owned_by = null
+
+[node name="Room2Game23" parent="Room2" unique_id=1597511287 instance=ExtResource("3_njhy2")]
+position = Vector2(-5, -135)
+tex = ExtResource("9_1jijn")
+is_collected = null
+is_displayed = null
+game_value = 345.0
+owned_by = null
+
+[node name="Room2Game24" parent="Room2" unique_id=461123966 instance=ExtResource("3_njhy2")]
+position = Vector2(35, -135)
+tex = ExtResource("10_20gr8")
+is_collected = null
+is_displayed = null
+game_value = 1034.75
+game_type = 3
+game_weight = 2
+game_size = 3
+owned_by = null
+
+[node name="Room2Game25" parent="Room2" unique_id=417163895 instance=ExtResource("3_njhy2")]
+position = Vector2(75, -135)
+tex = ExtResource("12_u2cfn")
+is_collected = null
+is_displayed = null
+game_value = 5432.0
+game_type = 2
+game_weight = 5
+game_size = 3
+owned_by = null
