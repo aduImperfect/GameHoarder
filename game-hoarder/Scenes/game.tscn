@@ -2,8 +2,11 @@
 
 [ext_resource type="Texture2D" uid="uid://ds14mm3uybddm" path="res://Textures/Game1.png" id="1_ebmjs"]
 [ext_resource type="Script" uid="uid://bs3kk4dusrrg3" path="res://Scripts/game.gd" id="1_qxrlw"]
+[ext_resource type="Script" uid="uid://c2fn5jm6jeyvb" path="res://Scripts/game_selection.gd" id="3_wrm1d"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_m6x6n"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_d2add"]
 
 [node name="Game" type="Node2D" unique_id=1587542141]
 script = ExtResource("1_qxrlw")
@@ -19,3 +22,15 @@ shape = SubResource("RectangleShape2D_m6x6n")
 
 [node name="Game" type="Sprite2D" parent="GameRB2D" unique_id=1297007933]
 scale = Vector2(20, 20)
+texture = ExtResource("1_ebmjs")
+
+[node name="GameSelectionA2D" type="Area2D" parent="." unique_id=1406580772 node_paths=PackedStringArray("gameTex")]
+script = ExtResource("3_wrm1d")
+gameTex = NodePath("../GameRB2D/Game")
+
+[node name="GameSelectionCS2D" type="CollisionShape2D" parent="GameSelectionA2D" unique_id=2125596680]
+scale = Vector2(1.1, 3)
+shape = SubResource("RectangleShape2D_d2add")
+
+[connection signal="body_entered" from="GameSelectionA2D" to="GameSelectionA2D" method="_on_body_entered"]
+[connection signal="body_exited" from="GameSelectionA2D" to="GameSelectionA2D" method="_on_body_exited"]
