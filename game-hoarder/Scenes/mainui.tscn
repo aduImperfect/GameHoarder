@@ -68,11 +68,10 @@ offset_bottom = 625.0
 theme_override_font_sizes/font_size = 10
 text = "Player 1:
 Arrow Keys | D-Pad | Left Joystick - Move
-P Key | X (DS) | A (Xbox) - Grab Game
+P Key | X (PS) | A (Xbox) - Grab Game
 
 Player 2:
 WASD Keys | D-Pad | Left Joystick - Move
-E Key | X (DS) | A (Xbox) - Grab Game
-"
+E Key | X (PS) | A (Xbox) - Grab Game"
 editable = false
 selecting_enabled = false

@@ -20,7 +20,7 @@ func _process(_delta: float) -> void:
 #------------------------------------------------
 	text += "\n"
 	text += "Player 1 Stats:\n"
-	text += "Currency Spent:"
+	text += "Currency Spent:\t"
 	text += str(CurrencyMeter_0.maxValue_0 - CurrencyMeter_0.tempValAccumulateStatic_0) + "\n"
 	text += "Games Collected:\n"
 #----------------
@@ -62,7 +62,7 @@ func _process(_delta: float) -> void:
 #------------------------------------------------
 	text += "\n"
 	text += "Player 2 Stats:\n"
-	text += "Currency Spent:"
+	text += "Currency Spent:\t"
 	text += str(CurrencyMeter_1.maxValue_1 - CurrencyMeter_1.tempValAccumulateStatic_1) + "\n"
 	text += "Games Collected:\n"
 #----------------
