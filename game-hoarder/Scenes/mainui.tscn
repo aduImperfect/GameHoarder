@@ -3,6 +3,8 @@
 [ext_resource type="Script" uid="uid://fosoyonr7qbr" path="res://Scripts/time_progress_bar.gd" id="1_bwfah"]
 [ext_resource type="Script" uid="uid://wtorbmsjvyya" path="res://Scripts/currency_bar_0.gd" id="2_6mhmv"]
 [ext_resource type="Script" uid="uid://u01ngymym3uc" path="res://Scripts/currency_bar_1.gd" id="3_nia38"]
+[ext_resource type="Script" uid="uid://dmpnyt5w5eibj" path="res://Scripts/game_end_stats.gd" id="4_hmkf7"]
+[ext_resource type="Texture2D" uid="uid://cy0wvseudi30f" path="res://Textures/Game5.png" id="5_4vhit"]
 
 [node name="Mainui" type="Node2D" unique_id=1683634489]
 
@@ -38,3 +40,39 @@ max_value = 10000.0
 value = 10000.0
 fill_mode = 2
 script = ExtResource("3_nia38")
+
+[node name="GameEndStats" type="TextEdit" parent="." unique_id=169486343]
+z_index = 200
+custom_minimum_size = Vector2(1280, 500)
+offset_right = 1280.0
+offset_bottom = 360.0
+theme_override_font_sizes/font_size = 16
+editable = false
+wrap_mode = 1
+scroll_smooth = true
+script = ExtResource("4_hmkf7")
+
+[node name="GameEndBG" type="Sprite2D" parent="GameEndStats" unique_id=1852425940]
+z_index = -50
+position = Vector2(640, 250)
+scale = Vector2(1280, 500)
+texture = ExtResource("5_4vhit")
+
+[node name="PlayerInstructions" type="TextEdit" parent="." unique_id=782684397]
+z_index = -1500
+custom_minimum_size = Vector2(220, 160)
+offset_left = 520.0
+offset_top = 465.0
+offset_right = 740.0
+offset_bottom = 625.0
+theme_override_font_sizes/font_size = 10
+text = "Player 1:
+Arrow Keys | D-Pad | Left Joystick - Move
+P Key | X (DS) | A (Xbox) - Grab Game
+
+Player 2:
+WASD Keys | D-Pad | Left Joystick - Move
+E Key | X (DS) | A (Xbox) - Grab Game
+"
+editable = false
+selecting_enabled = false

@@ -5,6 +5,7 @@ class_name PlayerCharacter_0
 @export var move_speed : float
 @export var is_moving : bool = false
 static var try_collecting_0 : bool = false
+@export var collectedgames_0_exposed : Array[Node2D]
 static var collectedgames_0 : Array[Node2D]
 static var atFinalPos_0 : bool
 
@@ -13,6 +14,7 @@ func _ready() -> void:
 	is_moving = false
 	try_collecting_0 = false
 	atFinalPos_0 = false
+	collectedgames_0_exposed.clear()
 	collectedgames_0.clear()
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
@@ -24,9 +26,15 @@ func _process(_delta: float) -> void:
 			collectedgames_0[k].is_displayed = true
 		return
 
+	collectedgames_0_exposed.clear()
+
 	try_collecting_0 = false
 	if Input.is_action_just_pressed("ui_pickup_0"):
 		try_collecting_0 = true
+
+	for j in collectedgames_0.size():
+		collectedgames_0_exposed.append(collectedgames_0[j])
+
 
 func _physics_process(_delta: float) -> void:
 	if Input.is_action_pressed("ui_move_left_0"):

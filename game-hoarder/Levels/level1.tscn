@@ -531,21 +531,21 @@ game_size = 3
 position = Vector2(635, 565)
 
 [node name="Room4Wall1" parent="Room4" unique_id=103579919 instance=ExtResource("1_t21ke")]
-position = Vector2(10, -87)
-scale = Vector2(10, 1)
+position = Vector2(2, -125)
+scale = Vector2(13, 1)
 
 [node name="Room4Wall2" parent="Room4" unique_id=2082068960 instance=ExtResource("1_t21ke")]
-position = Vector2(-100, 3)
-scale = Vector2(1, 10)
+position = Vector2(-130, -5)
+scale = Vector2(1, 13)
 
 [node name="Room4Wall3" parent="Room4" unique_id=1866929932 instance=ExtResource("1_t21ke")]
-position = Vector2(100, 3)
-scale = Vector2(1, 10)
+position = Vector2(140, -5)
+scale = Vector2(1, 13)
 
 [node name="Room4Wall4" parent="Room4" unique_id=2051959062 instance=ExtResource("1_t21ke")]
-position = Vector2(-70, 93)
+position = Vector2(-80, 93)
 scale = Vector2(4, 1)
 
 [node name="Room4Wall5" parent="Room4" unique_id=851616722 instance=ExtResource("1_t21ke")]
-position = Vector2(70, 93)
+position = Vector2(90, 93)
 scale = Vector2(4, 1)
